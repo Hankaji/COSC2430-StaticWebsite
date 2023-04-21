@@ -1,0 +1,270 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Hoang Thai Phuc
+ID: 3978081
+Acknowledgement: Ionicons -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Phuc's sex chamber page</title>
+</head>
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="/assets/images/icon/Bookology icon.png" alt="Bookology icon">
+                <h2 class="logo-text">Bookology</h2>
+            </div>
+            <nav>
+                <div class="hamburger-bar">
+                    <input title="hamburger-bar" type="checkbox" id="hamburger-bar">
+                    <!-- Hamburger button -->
+                    <label class="hbg-btn" for="hamburger-bar"></label>
+                </div>
+                <ul class="nav-links">  
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#fiction-category">Fiction</a></li>
+                    <li><a href="#non-fiction-category">Non fiction</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Hero section (Might add later) -->
+        <section id="hero-section">
+            <div class="hero-text">
+                <h1>
+                    <blockquote>A book is a gift you can open again and again.</blockquote>
+                </h1>
+                <p>-Garrison Keillor</p>
+                <p>Discover million of books with the best price offered here</p>
+            </div>
+            <div class="hero-img">
+                <div class="hero-book">
+                    <img src="./assets/images/The Other Side of the World.jpg" alt="The Other Side of the World cover">
+                </div>
+                <div class="hero-book">
+                    <img src="./assets/images/Think and Grow Rich.jpg" alt="Think and Grow Rich">
+                </div>
+                <div class="hero-book">
+                    <img src="./assets/images/An Immense World.jpg" alt="An Immense World">
+                </div>
+                <!-- <p>asaksaskamskmsaksm</p> -->
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Fiction books -->
+        <section id="fiction-category" class="category">
+            <h1><a href="">Fiction books</a></h1>
+            <div class="book-container">
+                <!-- The Other Side of the World -->
+                <div class="book-info">
+                    <div class="book">
+                        <div class="back-cover"></div>
+                        <img src="./assets/images/The Other Side of the World.jpg" alt="The Other Side of the World cover">
+                    </div>
+                    <div class="detail">
+                        <h1 title="The Other Side of the World">The Other Side of the World</h1>
+                        <h2>Stephanie Bishop</h2>
+                        <p>$11.99</p>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <p>3.2 / 5</p>
+                        </div>
+                        <a href="/">More details</a>
+                    </div>
+                </div>
+                <!-- Tomorrow, and Tomorrow, and Tomorrow -->
+                <div class="book-info">
+                    <div class="book">
+                        <div class="back-cover"></div>
+                        <img src="./assets/images/Tomorrow, and Tomorrow, and Tomorrow.jpg" alt="Tomorrow, and Tomorrow, and Tomorrow cover">
+                    </div>
+                    <div class="detail">
+                        <h1 title="Tomorrow, and Tomorrow, and Tomorrow">Tomorrow, and Tomorrow, and Tomorrow</h1>
+                        <h2>Gabrielle Zevin</h2>
+                        <p>$13.99</p>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <p>4.3 / 5</p>
+                        </div>
+                        <a href="/">More details</a>
+                    </div>
+                </div>
+                <!-- Trust -->
+                <div class="book-info">
+                    <div class="book">
+                        <div class="back-cover"></div>
+                        <img src="./assets/images/Trust.jpg" alt="Trust cover">
+                    </div>
+                    <div class="detail">
+                        <h1 title="Trust">Trust</h1>
+                        <h2>Hernan Diaz</h2>
+                        <p>$14.99</p>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <p>3.86 / 5</p>
+                        </div>
+                        <a href="/">More details</a>
+                    </div>
+                </div>
+                <!-- The Last Thing He Told Me -->
+                <div class="book-info">
+                    <div class="book">
+                        <div class="back-cover"></div>
+                        <img src="./assets/images/The Last Thing He Told Me.jpg" alt="The Last Thing He Told Me cover">
+                    </div>
+                    <div class="detail">
+                        <h1 title="The Last Thing He Told Me">The Last Thing He Told Me</h1>
+                        <h2>Laura Dave</h2>
+                        <p>$11.99</p>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <p>3.86 / 5</p>
+                        </div>
+                        <a href="/">More details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Non fiction -->
+        <section id="non-fiction-category" class="category">
+            <h1><a href="">Non fiction books</a></h1>
+            <div class="book-container">
+                <!-- Still Life with Bones -->
+                <div class="book-info">
+                    <div class="book">
+                        <div class="back-cover"></div>
+                        <img src="./assets/images/Still Life With Bones.jpg" alt="Still Life with Bones cover">
+                    </div>
+                    <div class="detail">
+                        <h1 title="Still Life with Bones">Still Life with Bones</h1>
+                        <h2>Alexa Hagerty</h2>
+                        <p>$13.99</p>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half"></ion-icon>
+                            <p>4.51 / 5</p>
+                        </div>
+                        <a href="/">More details</a>
+                    </div>
+                </div>
+                <!-- On the Origin of Time -->
+                <div class="book-info">
+                    <div class="book">
+                        <div class="back-cover"></div>
+                        <img src="./assets/images/On the Origin of Time.jpg" alt="On the Origin of Time cover">
+                    </div>
+                    <div class="detail">
+                        <h1 title="On the Origin of Time">On the Origin of Time</h1>
+                        <h2>Thomas Hertog</h2>
+                        <p>$13.99</p>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <p>4.28 / 5</p>
+                        </div>
+                        <a href="/">More details</a>
+                    </div>
+                </div>
+                <!-- Down Under -->
+                <div class="book-info">
+                    <div class="book">
+                        <div class="back-cover"></div>
+                        <img src="./assets/images/Down Under.jpg" alt="Down Under cover">
+                    </div>
+                    <div class="detail">
+                        <h1 title="Down Under">Down Under</h1>
+                        <h2>Bill Bryson</h2>
+                        <p>$14.99</p>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <p>4.07 / 5</p>
+                        </div>
+                        <a href="/">More details</a>
+                    </div>
+                </div>
+                <!-- Better Than Before -->
+                <div class="book-info">
+                    <div class="book">
+                        <div class="back-cover"></div>
+                        <img src="./assets/images/Better Than Before.jpg" alt="Better Than Before cover">
+                    </div>
+                    <div class="detail">
+                        <h1 title="Better Than Before">Better Than Before</h1>
+                        <h2>Gretchen Rubin</h2>
+                        <p>$12.99</p>
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <p>3.82 / 5</p>
+                        </div>
+                        <a href="/">More details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-content">
+            <!-- <h2>Connect</h2> -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a class="non-clickable-link" href="#">About Us</a></li>
+                    <li><a class="non-clickable-link" href="#">Privacy Policy</a></li>
+                    <li><a class="non-clickable-link" href="#">Privacy Policy</a></li>
+                    <li><a class="non-clickable-link" href="#">Copyright</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="contacts">
+                <p>Palm Springs, California(CA)</p>
+                <p>760-880-4616</p>
+                <p>bookology@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 Bookology. designed by <span>Hoang Thai Phuc</span></p>
+        </div>
+    </footer>
+    <!-- Ionicons packs -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

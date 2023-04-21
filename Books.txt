@@ -1,0 +1,27 @@
+Fiction books
+    Historical fiction:
+        The other side of the world [Working link]
+        Tomorrow, and Tomorrow, and Tomorrow
+        Trust
+    Mystery:
+        The Last Thing He Told Me
+        How I'll Kill You
+        Vera Wong's Unsolicited Advice for Murderers
+    Science fiction:
+        Rubicon
+        Infinity Gate
+        The Lies of the Ajungo
+
+Non fiction books:
+    Science:
+        Still Life with Bones
+        An Immense World
+        On the Origin of Time
+    Travel:
+        Vagabonding
+        The Lost City of the Monkey God: A True Story
+        Down Under
+    Self help:
+        Outliers
+        Think and Grow Rich
+        Better Than Before
