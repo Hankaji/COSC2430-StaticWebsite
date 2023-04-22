@@ -4,7 +4,7 @@ Semester: 2023A
 Assessment: Assignment 1
 Author: Hoang Thai Phuc
 ID: 3978081
-Acknowledgement: Acknowledge the resources that you use here. */
+Acknowledgement: Ionicons, Google fonts */
 
 /* Font import */
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500&family=Montserrat:wght@300;400;700&display=swap');
@@ -44,7 +44,7 @@ a.non-clickable-link {
 
 /*------------------------------Home page------------------------------*/
 /*--------------------Nav bar--------------------*/
-.nav-bar {
+#nav-bar {
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -55,8 +55,9 @@ a.non-clickable-link {
     box-shadow: 0 1px 10px 5px rgb(255, 255, 255);
 }
 
-.nav-bar nav {
+#nav-bar nav {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
 }
@@ -118,7 +119,7 @@ a.non-clickable-link {
 .hbg-btn {
     display: block;
     position: relative;
-    z-index: 3;
+    z-index: 4;
     width: 25px;
     height: 3.5px;
     border-radius: 12px;
@@ -168,7 +169,28 @@ a.non-clickable-link {
 }
 
 header nav:has(#hamburger-bar:checked) .nav-links {
-    right: 0;
+    right: 0px;
+}
+
+header nav::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+
+    background: rgba(255, 255, 255, 0.11);
+    -webkit-backdrop-filter: blur(2.1px);
+    backdrop-filter: blur(2.1px);
+    transition: .3s;
+}
+
+header nav:has(#hamburger-bar:checked)::before {
+    visibility: visible;
+    opacity: 1;
 }
 
 /*--------------------Hero section--------------------*/
@@ -296,6 +318,46 @@ header nav:has(#hamburger-bar:checked) .nav-links {
     left: 70%;
     top: -50px;
 }
+
+/*--------------------Media section--------------------*/
+#media-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#media-section > div {
+    width: 40%;
+}
+
+.question {
+    text-align: left;
+}
+
+.question h1 {
+    margin-bottom: 12px;
+    font-size: 1.7rem;
+}
+
+.question p {
+    font-size: 1.2rem;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    width: 100%;
+}
+
+.video iframe {
+    width: 440px;
+    height: 248px;
+}
+
 
 /*--------------------Category--------------------*/
 main {
@@ -473,6 +535,15 @@ main {
     color: white;
 }
 
+/*------------------------------Sub-Catergory page------------------------------*/
+.Sub-category-title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3rem;
+    letter-spacing: 6px;
+    margin-bottom: 24px;
+}
+
 /*------------------------------Media queries------------------------------*/
 /*--------------------1465px--------------------*/
 @media screen and (max-width: 1465px) {
@@ -483,7 +554,7 @@ main {
 
 /*--------------------960px--------------------*/
 @media (max-width: 960px) {
-    .nav-bar {
+    #nav-bar {
         padding: 15px 2%;
     }
 
@@ -512,8 +583,9 @@ main {
         flex-direction: column;
         gap: 1.5rem;
         position: fixed;
+        /* z-index: 3; */
         top: 0;
-        right: -300px;
+        right: -320px;
         width: 300px;
         height: 100vh;
         background-color: white;
@@ -536,6 +608,20 @@ main {
     }
     .hero-text > * {
         text-align: center;
+    }
+
+    .media-section > div {
+        width: 80%;
+    }
+
+    .video iframe {
+        width: 530px;
+        height: 298px;
+    }
+
+    .Sub-category-title {
+        font-size: 2rem;
+        letter-spacing: 3px;
     }
 }
 

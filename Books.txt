@@ -1,27 +1,33 @@
 Fiction books
     Historical fiction:
-        The other side of the world [Working link]
-        Tomorrow, and Tomorrow, and Tomorrow
-        Trust
+        The other side of the world - Stephanie Bishop [Working link]
+        Tomorrow, and Tomorrow, and Tomorrow - Gabrielle Zevin
+        Trust - Hernan Diaz
+        Outlander - Diana Gabaldon
     Mystery:
-        The Last Thing He Told Me
-        How I'll Kill You
-        Vera Wong's Unsolicited Advice for Murderers
+        How I'll Kill You - Ren DeStefano
+        The Last Thing He Told Me - Laura Dave
+        Vera Wong's Unsolicited Advice for Murderers - Jesse Q. Sutanto
+        Stars and Smoke - Marie Lu
     Science fiction:
-        Rubicon
-        Infinity Gate
-        The Lies of the Ajungo
+        Rubicon - J.S. Dewes
+        Infinity Gate - M.R. Carey
+        The Lies of the Ajungo - Moses Ose Utomi
+        Flux - Jinwoo Chong
 
 Non fiction books:
-    Science:
-        Still Life with Bones
-        An Immense World
-        On the Origin of Time
     Travel:
-        Vagabonding
-        The Lost City of the Monkey God: A True Story
+        Vagabonding - Rolf Potts, Timothy Ferriss
+        Feral - Emily Pennington
+        The Lost City of the Monkey God: A True Story - Douglas Preston
         Down Under
+    Science:
+        Still Life with Bones - Alexa Hagerty
+        An Immense World - Ed Yong
+        On the Origin of Time - Thomas Hertog
+        Cosmos - Carl Sagan
     Self help:
-        Outliers
-        Think and Grow Rich
-        Better Than Before
+        Outliers - Malcolm Gladwell
+        Think and Grow Rich - Napoleon Hill
+        Better Than Before - Gretchen Rubin
+        Saving Time - Jenny Odell
