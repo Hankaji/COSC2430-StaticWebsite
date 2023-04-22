@@ -610,7 +610,7 @@ main {
         text-align: center;
     }
 
-    .media-section > div {
+    #media-section > div {
         width: 80%;
     }
 
