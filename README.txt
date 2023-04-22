@@ -8,3 +8,5 @@ Acknowledgement:
 - Ionicons for icons ()
 - Google fonts for fonts ()
 - Goodreads, Amazon for book's images and information ()()
+
+Website url: https://hankaji.github.io/COSC2430-StaticWebsite/
