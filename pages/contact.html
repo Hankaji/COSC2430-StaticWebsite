@@ -1,0 +1,147 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Hoang Thai Phuc
+ID: 3978081
+Acknowledgement: Ionicons -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../assets/style.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <section id="nav-bar">
+            <div class="logo">
+                <img src="./../assets/images/Bookology icon.png" alt="Bookology icon">
+                <a href="./../index.html"><h2 class="logo-text">Bookology</h2></a>
+            </div>
+            <nav>
+                <div class="hamburger-bar">
+                    <input title="hamburger-bar" type="checkbox" id="hamburger-bar">
+                    <!-- Hamburger button -->
+                    <label class="hbg-btn" for="hamburger-bar"></label>
+                </div>
+                <ul class="nav-links">  
+                    <li><a href="./../index.html">Home</a></li>
+                    <li><a href="./../pages/fiction-sub-category.html">Fiction</a></li>
+                    <li><a href="./../pages/non-fiction-sub-category.html">Non fiction</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <!-- Title -->
+        <h1 class="title">Contact us</h1>
+        <!-- Contact form -->
+        <section id="contact-form">
+            <div class="cover">
+                <img src="./../assets/images/front-view-hardback-books-library.jpg" alt="front-view-hardback-books-library">
+            </div>
+            <div class="form">
+                <form method="post" enctype="application/x-www-form-urlencoded">
+                    <!-- Contact purpose -->
+                    <div class="input-field contact-purpose">
+                        <label for="purpose">Contact purpose</label>
+                        <select name="purpose" id="purpose">
+                            <option value="sell">I want to sell books</option> 
+                            <option value="buy">I want to buy books</option> 
+                        </select>
+                    </div>
+                    <!-- Name -->
+                    <div class="input-field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
+                        <div class="underline-focus"></div>
+                        <label for="name" class="placeholder-label"><ion-icon name="person-outline"></ion-icon> Enter your Name</label>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="input-field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <div class="underline-focus"></div>
+                        <label for="email" class="placeholder-label"><ion-icon name="mail-outline"></ion-icon> Enter your email</label>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="input-field">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" required>
+                        <div class="underline-focus"></div>
+                        <label for="phone" class="placeholder-label"><ion-icon name="call-outline"></ion-icon> Enter your phone</label>
+                    </div>
+
+                    <!-- Contact preference -->
+                    <div class="selector preference">
+                        <label for="by_email">Contact Preference</label>
+                        <div class="options">
+                            <input type="checkbox" value="email" id="by_email" name="preference" required="">
+                            <label for="by_email">By email</label>
+                            <input type="checkbox" value="phone" id="by_phone" name="preference" required="">
+                            <label for="by_phone">By phone</label> <br>
+                        </div>
+                    </div>
+
+                    <!-- newsletter -->
+                    <div class="selector news">
+                        <label for="yes">Receive weekly newsletter?</label>
+                        <div class="options">
+                            <input type="radio" value="yes" id="yes" name="news" checked="" required="">
+                            <label for="yes">Yes</label>
+                            <input type="radio" value="no" id="no" name="news" required="">
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+
+                    <!-- Extra notes -->
+                    <div class="input-field extra-note">
+                        <label for="extra-note">Extra Note</label>
+                        <textarea name="extra-note" id="extra-note" data-gramm="false" wt-ignore-input="true"></textarea>
+                        <div class="underline-focus"></div>
+                        <label for="phone" class="placeholder-label"> Any feedbacks? </label>
+                    </div>
+
+                    <!-- buttons -->
+                    <div class="form-btn">
+                        <button id="reset-btn" type="reset">Reset</button>
+                        <button id="submit-btn" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-content">
+            <!-- <h2>Connect</h2> -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a class="non-clickable-link" href="#">About Us</a></li>
+                    <li><a class="non-clickable-link" href="#">Privacy Policy</a></li>
+                    <li><a class="non-clickable-link" href="#">Privacy Policy</a></li>
+                    <li><a class="non-clickable-link" href="#">Copyright</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="contacts">
+                <p>Palm Springs, California(CA)</p>
+                <p>760-880-4616</p>
+                <p>bookology@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 Bookology. designed by <span>Hoang Thai Phuc</span></p>
+        </div>
+    </footer>
+    <!-- Ionicons packs -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -5,8 +5,8 @@ Assessment: Assignment 1
 Author: Hoang Thai Phuc
 ID: 3978081
 Acknowledgement:
-- Ionicons for icons ()
-- Google fonts for fonts ()
-- Goodreads, Amazon for book's images and information ()()
+- Ionicons for icons (https://ionic.io/ionicons)
+- Google fonts for fonts (https://fonts.google.com)
+- Goodreads, Amazon for book's images and information (https://www.goodreads.com/)()
 
-Website url: https://hankaji.github.io/COSC2430-StaticWebsite/
+Website url: https://hankaji.github.io/COSC2430-StaticWebsite
