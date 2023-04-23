@@ -30,7 +30,7 @@ body {
 
 :root {
     --primary-color: rgb(0, 34, 60);
-    --Secondary-color: rgb(192, 228, 255);
+    --Secondary-color: rgb(96, 186, 255);
 }
 
 a {
@@ -550,23 +550,30 @@ main {
     width: 100%;
     height: 60%;
     border-radius: 15px;
-    overflow: hidden;
+    margin: 8% 0 4% 0;
+    /* overflow: hidden; */
     /* background-color: aqua; */
     box-shadow: 0 0 20px 5px rgb(177, 177, 177);
 }
 
 .cover {
-    width: 40%;
+    position: relative;
+    width: 30%;
 }
 
 .cover img {
+    position: absolute;
     width: 100%;
-    height: 100%;
+    height: 110%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 15px;
+    box-shadow: 0 0 20px 5px rgb(177, 177, 177);
     object-fit: cover;
 }
 
 .form {
-    width: 60%;
+    width: 70%;
 }
 
 .form form {
@@ -577,105 +584,43 @@ main {
     flex-direction: column;
 }
 
-.contact-purpose select {
-    width: 100%;
-    font-size: 1rem;
-    padding: 10px 8px;
-    border: none;
-    outline: none;
-    background: transparent;
-}
-
 .input-field {
     position: relative;
-    margin-top: calc(1.5rem + 10px);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 12px;
     margin-bottom: 8px;
-    width: 90%;
-    border-bottom: 3px solid rgb(128, 128, 128);
+    width: 95%;
 }
 
-.input-field input {
-    width: 100%;
+.input-field input, .contact-purpose select, .input-field textarea {
+    position: relative;
+    flex-grow: 1;
     padding: 10px 8px;
     font-size: 1rem;
-    border: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
     outline: none;
     background: transparent;
+    transition: .3s;
+}
+
+.input-field input:focus, .contact-purpose select:focus, .input-field textarea:focus {
+    border: 2px solid var(--Secondary-color);
 }
 
 .input-field textarea {
     resize: vertical;
-    width: 100%;
-    height: 100%;
-    padding: 10px 8px;
-    font-size: 1rem;
-    border: none;
-    outline: none;
-    background: transparent;
-}
-
-.input-field label:first-child {
-    position: absolute;
-    bottom: 100%;
-}
-
-.input-field .underline-focus {
-    position: absolute;
-    width: 0;
-    height: 2px;
-    left: 50%;
-    top: 100%;
-    background: rgb(0,185,255);
-    background: linear-gradient(90deg, rgba(0,185,255,1) 0%, rgba(93,113,255,1) 50%, rgba(130,26,255,1) 100%);
-    transform: translateX(-50%);
-    background-color: black;
-    transition: 0.3s;
-}
-
-.input-field input:focus ~ .underline-focus {
-    width: 100%;
-}
-
-.input-field .placeholder-label {
-    position: absolute;
-    left: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: text;
-    -webkit-user-select: none;
-    user-select: none;
-    color: gray;
-}
-
-.extra-note .placeholder-label {
-    position: absolute;
-    left: 8px;
-    top: 1rem;
-    transform: translateY(-50%);
-    cursor: text;
-    -webkit-user-select: none;
-    user-select: none;
-    color: gray;
-}
-
-.input-field .placeholder-label ion-icon {
-    transform: translateY(10%);
-}
-
-.input-field input:valid ~ label {
-    display: none;
-}
-
-.input-field textarea:focus ~ label {
-    display: none;
+    flex-grow: 1;
+    min-height: 42px;
 }
 
 .selector {
-    width: 90%;
+    width: 95%;
     margin-top: 12px;
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
 }
 
 .selector label {
@@ -696,14 +641,14 @@ main {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
-    width: 90%;
+    width: 95%;
     padding: 12px 0;
     margin-top: auto;
     margin-bottom: 2%;
 }
 
 .form-btn button {
-    padding: 2% 4%;
+    padding: 1% 2%;
     border-radius: 25px;
     cursor: pointer;
     background-color: transparent;
@@ -716,6 +661,156 @@ main {
     color: white;
     background-color: var(--primary-color);
     transform: translateY(-3px);
+}
+
+/*------------------------------Book detail------------------------------*/
+#book-detail {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.breadcrumb {
+    color: gray;
+}
+
+.breadcrumb a:hover {
+    color: var(--Secondary-color);
+}
+
+.book-preview {
+    display: flex;
+    width: 100%;
+}
+
+.book-img {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2% 5%;
+}
+
+.primary-img {
+    width: 280px;
+}
+
+.primary-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 15px 3px rgba(188, 188, 188, 0.855);
+}
+
+.small-img {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+
+.small-img div {
+    width: 100%;
+    height: 30%;
+}
+
+.small-img div img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    box-shadow: 0 0 15px 2px rgba(188, 188, 188, 0.455);
+    transition: .3s;
+}
+
+.small-img div img:hover {
+    z-index: 2;
+    transform: scale(1.5);
+}
+
+.buy-book {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    width: 50%;
+    padding: 2% 0;
+}
+
+.buy-book h1 {
+    font-size: 200%;
+}
+
+.buy-book h2 {
+    font-size: 150%;
+    color: rgb(97, 97, 97);
+    font-weight: 300;
+}
+
+.buy-book h2::before {
+    content: "By ";
+}
+
+.buy-book .rating {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.buy-book .rating, .buy-book > p:first-of-type {
+    font-size: 150%;
+}
+
+.buy-book > p:first-of-type {
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.buy-book .rating p {
+    font-size: 1.5rem;
+    margin-left: 1%;
+}
+
+.buy-btn {
+    margin-top: auto;
+}
+
+.buy-btn button {
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-color: transparent;
+    font-size: 1rem;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    transition: .3s;
+}
+
+.buy-btn button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Book description */
+.book-description h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.book-description div {
+    margin-top: 18px;
+    border-top: 3px solid var(--primary-color);
+    padding-top: 18px;
+}
+
+.book-description div p {
+    font-size: 1.15rem;
+    margin-bottom: 18px;
 }
 
 /*------------------------------Media queries------------------------------*/
@@ -814,6 +909,53 @@ main {
 
     .form {
         width: 100%;
+    }
+
+    .input-field {
+        margin-top: calc(0.5rem + 12px);
+    }
+
+    .input-field label {
+        position: absolute;
+        font-size: 1.1rem;
+        padding: 0 3px;
+        border-radius: 5px;
+        z-index: 2;
+        background-color: white;
+        left: 12px;
+        top: -12px;
+    }
+
+    .book-preview {
+        flex-direction: column;
+    }
+
+    .book-preview > * {
+        width: 100%;
+    }
+
+    .book-img {
+        flex-direction: column;
+    }
+
+    .small-img {
+        flex-direction: row;
+        width: 100%;
+        height: 200px;
+    }
+
+    .small-img div {
+        width: 30%;
+        height: 100%;
+    }
+
+    .buy-book {
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .buy-book .rating {
+        /* justify-content: center; */
     }
 }
 

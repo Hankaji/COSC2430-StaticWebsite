@@ -8,5 +8,6 @@ Acknowledgement:
 - Ionicons for icons (https://ionic.io/ionicons)
 - Google fonts for fonts (https://fonts.google.com)
 - Goodreads, Amazon for book's images and information (https://www.goodreads.com/)()
+- CSS Gradient for creating gradient color code (https://cssgradient.io/)
 
 Website url: https://hankaji.github.io/COSC2430-StaticWebsite
