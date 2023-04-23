@@ -810,6 +810,9 @@ main {
 
 .book-description div p {
     font-size: 1.15rem;
+}
+
+.book-description div > * {
     margin-bottom: 18px;
 }
 
@@ -940,8 +943,9 @@ main {
 
     .small-img {
         flex-direction: row;
+        align-items: center;
         width: 100%;
-        height: 200px;
+        height: 20%;
     }
 
     .small-img div {
@@ -954,9 +958,10 @@ main {
         align-items: center;
     }
 
-    .buy-book .rating {
-        /* justify-content: center; */
+    .buy-book * {
+        text-align: center;
     }
+
 }
 
 /*------------------------------Footer------------------------------*/
