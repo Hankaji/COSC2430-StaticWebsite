@@ -4,7 +4,14 @@ Semester: 2023A
 Assessment: Assignment 1
 Author: Hoang Thai Phuc
 ID: 3978081
-Acknowledgement: Ionicons, Google fonts */
+Acknowledgement:
+- Ionicons for icons (https://ionic.io/ionicons)
+- Flaticon for logo (https://www.flaticon.com)
+- Freepik for high res images (https://www.freepik.com)
+- Google fonts for fonts (https://fonts.google.com)
+- Goodreads for book's images and information (https://www.goodreads.com)
+- Ebay for book's small images in book deatil page (https://www.ebay.com/)
+- CSS Gradient for creating gradient color code (https://cssgradient.io) */
 
 /* Font import */
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500&family=Montserrat:wght@300;400;700&display=swap');
@@ -15,10 +22,6 @@ Acknowledgement: Ionicons, Google fonts */
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
-/* html, body {
-    min-height: 100%;
-} */
 
 body {
     /* position: relative; */
@@ -52,7 +55,7 @@ a.non-clickable-link {
     padding: 20px 5%;
     width: 100%;
     z-index: 3;
-    box-shadow: 0 1px 10px 5px rgb(255, 255, 255);
+    /* box-shadow: 0 1px 10px 5px rgb(255, 255, 255); */
 }
 
 #nav-bar nav {
@@ -71,9 +74,12 @@ a.non-clickable-link {
     width: 2rem;
 }
 
-.logo-text {
+.logo a {
     display: inline-flex;
     align-items: center;
+}
+
+.logo-text {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: 'Chivo-Mono';
@@ -203,27 +209,46 @@ header nav:has(#hamburger-bar:checked)::before {
     width: 100%;
     height: 720px;
     padding: 80px;
-    background: var(--Secondary-color);
-    background: linear-gradient(187deg, rgba(192,228,255,1) 0%, rgba(118,189,227,1) 33%, rgba(44,138,185,1) 66%, rgba(5,102,144,1) 100%);
+    /* background: var(--Secondary-color); */
+    /* background: linear-gradient(187deg, rgba(192,228,255,1) 0%, rgba(118,189,227,1) 33%, rgba(44,138,185,1) 66%, rgba(5,102,144,1) 100%); */
+}
+
+.decorative-circle {
+    position: absolute;
+    z-index: -1;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    filter: blur(25px);
+}
+
+.decorative-circle:nth-child(1) {
+    width: 1000px;
+    background-color: var(--Secondary-color);
+    opacity: 0.5;
+    top: -58%;
+    left: -20%;
+}
+
+.decorative-circle:nth-child(2) {
+    width: 600px;
+    background-color: var(--primary-color);
+    opacity: 0.3;
+    top: -50%;
+    right: -15%;
 }
 
 .hero-text {
-    width: 40%;
+    width: 50%;
 }
 
 .hero-text h1 {
-    font-size: 3.2rem;
+    font-size: 4.5rem;
 }
 
 .hero-text p {
-    text-align: right;
-    font-size: 1.5rem;
-}
-
-.hero-text p:nth-child(3) {
-    margin-top: 48px;
-    text-align: left;
     font-size: 1.2rem;
+    margin-top: 48px;
+    width: 75%;
 }
 
 /* hero img */
@@ -233,36 +258,32 @@ header nav:has(#hamburger-bar:checked)::before {
     width: 50%;
 }
 
-.hero-book {
+.hero-book, .book-bg-cover {
     position: absolute;
     aspect-ratio: 2 / 3;
-    /* width: 200px; */
     transform: translateX(-50%);
     height: 270px;
-    box-shadow: 4px 4px 15px 2px rgb(111, 111, 111);
+    box-shadow: 4px 4px 15px 2px rgba(39, 39, 39, 0.8);
     transform-origin: center;
     transform-style: preserve-3d;
     transition: .3s;
 }
 
+.book-bg-cover {
+    z-index: -2;
+    transform: translateX(-50%) scale(120%);
+    box-shadow: none;
+    /* background-color: var(--primary-color); */
+    background-color: transparent;
+    border-radius: 25px;
+}
+
 .hero-book img {
+    position: relative;
     width: 100%;
     height:100%;
     object-fit: fill;
-    /* opacity: 0.2; */
 }
-
-/* .hero-book::before {
-    content:'';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background: #eeeeee;
-    transform-origin: top;
-    transform: skewX(45deg);
-} */
 
 .hero-book::before {
     content:'';
@@ -285,38 +306,35 @@ header nav:has(#hamburger-bar:checked)::before {
     transform: rotateY(90deg) translateX(15px) translateZ(90px);
 }
 
-/* .hero-book::after {
-    content:'';
-    position: absolute;
-    top: 0px;
-    right: -5px;
-    width: 6px;
-    height: 100%;
-    background: #eeeeee;
-    transform-origin: left;
-    transform: skewy(45deg);
-} */
-
 .hero-book:hover {
     transform: rotateY(-30deg) rotateX(15deg) translateX(-40%);
 }
 
-.hero-book:nth-child(1) {
-    z-index: 5;
+.hero-book:nth-child(1), .book-bg-cover:nth-child(2) {
     left: 30%;
     top: -250px;
 }
 
-.hero-book:nth-child(2) {
-    z-index: 3;
+.hero-book:nth-child(1) {
+    z-index: 5;
+}
+
+.hero-book:nth-child(3), .book-bg-cover:nth-child(4){
     left: 50%;
     top: -150px;
 }
 
 .hero-book:nth-child(3) {
-    z-index: 1;
+    z-index: 3;
+}
+
+.hero-book:nth-child(5), .book-bg-cover:nth-child(6){
     left: 70%;
     top: -50px;
+}
+
+.hero-book:nth-child(5) {
+    z-index: 1;
 }
 
 /*--------------------Media section--------------------*/
@@ -822,6 +840,10 @@ main {
     .book-info {
         width: 40%;
     }
+    
+    .hero-text h1 {
+        font-size: 3rem;
+    }
 }
 
 /*--------------------960px--------------------*/
@@ -875,6 +897,16 @@ main {
         height: auto;
     }
 
+    .decorative-circle:nth-child(1) {
+        top: -10%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .decorative-circle:nth-child(2) {
+        display: none;
+    }
+
     .hero-img {
         transform: translateY(260px);
     }
@@ -884,8 +916,12 @@ main {
         margin-top: 500px;
     }
     
-    .hero-text p:nth-child(3) {
+    .hero-text * {
         text-align: center;
+    }
+
+    .hero-text p {
+        width: 100%;
     }
 
     #media-section > div {
