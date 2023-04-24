@@ -225,18 +225,20 @@ header nav:has(#hamburger-bar:checked)::before {
 
 .decorative-circle:nth-child(1) {
     width: 1000px;
-    background-color: var(--Secondary-color);
+    background: var(--Secondary-color);
+    background: linear-gradient(336deg, rgba(0,185,255,1) 0%, rgba(93,113,255,1) 35%, rgba(130,26,255,1) 70%);
     opacity: 0.5;
     top: -58%;
     left: -20%;
 }
 
 .decorative-circle:nth-child(2) {
-    width: 600px;
-    background-color: var(--primary-color);
-    opacity: 0.3;
+    width: 700px;
+    background: var(--primary-color);
+    background: linear-gradient(61deg, rgba(23,138,181,1) 0%, rgba(21,21,171,1) 45%, rgba(96,9,162,1) 80%);
+    opacity: 0.4;
     top: -50%;
-    right: -15%;
+    right: -12%;
 }
 
 .hero-text {
@@ -862,6 +864,10 @@ main {
         font-size: 1rem;
     }
 
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+
     .selector {
         align-items: initial;
         flex-direction: column;
@@ -900,13 +906,17 @@ main {
     }
 
     .decorative-circle:nth-child(1) {
-        top: -10%;
+        top: 0;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
     }
 
     .decorative-circle:nth-child(2) {
         display: none;
+    }
+
+    .hero-text h1 {
+        font-size: 2.4rem;
     }
 
     .hero-img {
