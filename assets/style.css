@@ -160,7 +160,7 @@ a.non-clickable-link {
     background-color: transparent;
     position: fixed;
     top: 29.5px;
-    right: 15px;
+    right: 2%;
 }
 
 #hamburger-bar:checked ~ .hbg-btn::before {
